@@ -1,6 +1,6 @@
 # 我的待办清单
 
-一个简洁现代的待办事项网页应用，使用 HTML、CSS 和 JavaScript 构建。
+`plan` 是一个简洁现代的待办事项网页应用，使用 HTML、CSS 和 JavaScript 构建。
 
 ## 功能
 
