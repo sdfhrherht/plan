@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的待办清单</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell" aria-labelledby="app-title">
+    <section class="todo-panel">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Todo List</p>
+          <h1 id="app-title"><span class="title-icon" aria-hidden="true">📝</span>我的待办清单</h1>
+        </div>
+        <div class="summary" aria-label="任务统计">
+          <span><strong id="pending-count">0</strong> 未完成</span>
+          <span><strong id="completed-count">0</strong> 已完成</span>
+        </div>
+      </header>
+
+      <form class="todo-form" id="todo-form">
+        <label class="sr-only" for="todo-input">任务内容</label>
+        <input id="todo-input" type="text" placeholder="今天要做什么？" autocomplete="off" maxlength="80">
+        <label class="sr-only" for="todo-priority">优先级</label>
+        <select id="todo-priority" class="priority-select" aria-label="优先级">
+          <option value="high">高</option>
+          <option value="medium" selected>中</option>
+          <option value="low">低</option>
+        </select>
+        <button type="submit">➕ 添加任务</button>
+      </form>
+
+      <div class="todo-actions">
+        <button class="clear-completed" id="clear-completed" type="button">清空已完成</button>
+        <button class="clear-all" id="clear-all" type="button">全部清空</button>
+      </div>
+
+      <ul class="todo-list" id="todo-list" aria-live="polite"></ul>
+
+      <p class="empty-state" id="empty-state">还没有任务，先写下今天想完成的一件小事吧。</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
