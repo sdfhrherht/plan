@@ -2,6 +2,10 @@
 
 `plan` 是一个简洁现代的待办事项网页应用，使用 HTML、CSS 和 JavaScript 构建。
 
+## 在线访问
+
+[https://sdfhrherht.github.io/plan/](https://sdfhrherht.github.io/plan/)
+
 ## 功能
 
 - 添加、完成、编辑和删除任务
